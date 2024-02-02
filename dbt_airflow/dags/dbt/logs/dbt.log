@@ -1,0 +1,42 @@
+[0m22:13:11.217667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B589668D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B58967990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B5893B290>]}
+
+
+============================== 22:13:11.222147 | 71dc1ebd-3095-482d-89f4-198da45059d9 ==============================
+[0m22:13:11.222147 [info ] [MainThread]: Running with dbt=1.7.7
+[0m22:13:11.223249 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\jrver\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt init', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:13:22.398643 [debug] [MainThread]: Starter project path: C:\Users\jrver\PycharmProjects\Python\SnowflakeAirflowDbtCosmo\venv\Lib\site-packages\dbt\include\starter_project
+[0m22:13:22.412369 [info ] [MainThread]: 
+Your new dbt project "cosmosproject" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:13:22.413370 [info ] [MainThread]: Setting up your profile.
+[0m22:13:37.204394 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No adapters available. Learn how to install an adapter by going to https://docs.getdbt.com/docs/connect-adapters#install-using-the-cli
+[0m22:13:37.205441 [debug] [MainThread]: Command `dbt init` failed at 22:13:37.205441 after 26.04 seconds
+[0m22:13:37.206568 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B51B1A790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B51859210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B51858650>]}
+[0m22:13:37.206568 [debug] [MainThread]: Flushing usage events
+[0m22:15:40.242395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A4C0EB7A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A4C0C90350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A4C0EB51D0>]}
+
+
+============================== 22:15:40.245886 | 449764fc-766c-4300-955b-f2834f794eee ==============================
+[0m22:15:40.245886 [info ] [MainThread]: Running with dbt=1.7.7
+[0m22:15:40.245951 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\jrver\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt init', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:15:40.247005 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': WindowsPath('C:/Users/jrver/.dbt')}
+[0m22:15:40.248028 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m22:15:46.147612 [info ] [MainThread]: A project called cosmosproject already exists here.
+[0m22:15:46.149793 [debug] [MainThread]: Command `dbt init` succeeded at 22:15:46.149793 after 5.92 seconds
+[0m22:15:46.149793 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A4BA10ACD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A4B9E59710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A4C0561250>]}
+[0m22:15:46.150809 [debug] [MainThread]: Flushing usage events
