@@ -38,9 +38,12 @@ For deploying to Astronomer, refer to the [official documentation](https://docs.
 
 After configuring Airflow connections, execute the DAGs and monitor their progress. Review the `findbesthotel` task logs for results.
 
-## Contact
+## Further information
 
-For support with the Astronomer CLI or any deployment issues, please reach out to Astronomer support.
+Under assets folder, you can find useful informacion such us websites, SQL commnands needed and orientation for the parameters by initializing dbt.
+This project is based on the official quick start from Snowflake. However I must to update, change code and find missing operators in order to accomplish the whole project.
+check my article here:
+check the quick start tutorial here: 
 
 ## Note
 
