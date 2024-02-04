@@ -2,36 +2,47 @@
 
 ## Overview
 
-This project demonstrates the integration of Airflow, DBT, and Snowflake, utilizing Snowpark to enable advanced data analysis. You will build a simple Airflow pipeline that leverages DBT and Snowflake for data transformation and a more complex pipeline incorporating Snowpark for data analysis with Python.
+Welcome to the SnowflakeAirflowDbtCosmo project, a demonstration of integrating Airflow, DBT, and Snowflake with Snowpark for advanced data analysis. This project, generated with `astro dev init` using the Astronomer CLI, showcases how to run Apache Airflow locally, building both simple and advanced data pipelines involving Snowflake.
+
+### What You'll Build
+
+- A simple Airflow pipeline leveraging DBT and Snowflake for data transformation.
+- A more complex pipeline using Snowpark for data analysis with Python.
 
 ## Prerequisites
 
-- **Snowflake Account**: Ensure you have access to a Snowflake account.
-- **Snowflake User**: Create a user with permissions to create objects in the `DEMO_dbt` database.
-- **Snowpark Enabled**: Verify Snowpark is enabled in your Snowflake environment.
-- **GitHub Account**: Needed for version control. [Join GitHub](https://github.com/join) if you don't have an account.
-- **Docker Desktop**: Install Docker Desktop to run Airflow in containers. [Download Docker](https://www.docker.com/products/docker-desktop).
-- **Astro CLI**: Install Astro CLI version 1.22.0 for managing Airflow environments. Follow the [Astro CLI setup instructions](https://www.astronomer.io/docs/cloud/stable/develop/cli-quickstart).
+- **Snowflake Account** with a user having permissions to create objects in `DEMO_DB`.
+- **Snowpark Enabled** on your Snowflake environment.
+- **GitHub Account** for version control. [Sign up for GitHub](https://github.com/join) if needed.
+- **Docker Desktop** installed to run Airflow in containers. [Download Docker](https://www.docker.com/products/docker-desktop).
+- **Astro CLI** version 1.22.0 installed for Airflow environment management. Follow the [Astro CLI setup instructions](https://www.astronomer.io/docs/cloud/stable/develop/cli-quickstart).
 
-## Setup Instructions
+## Project Contents
 
-1. **Prepare Snowflake**: Ensure you have a warehouse, database, and tables set up in Snowflake.
-2. **Clone Repository**: Clone this repository to your local machine.
-3. **Start Environment**: Navigate to the project directory (`\path\to\SnowflakeAirflowDbtCosmo\dbt_airflow`) and run `astro dev start` to launch Docker with Postgres and Airflow.
-4. **Access Airflow UI**: Open a browser and navigate to `localhost:8080` to view the Airflow UI.
-5. **Configure Airflow Connections**: Follow the steps in the provided article to set up three necessary connections in Airflow for communication with Snowflake.
+- `dags/`: Contains your Airflow DAGs, including example DAGs for basic and advanced use cases.
+- `Dockerfile`: Specifies a versioned Astro Runtime Docker image for Airflow.
+- `include/`, `packages.txt`, `requirements.txt`, `plugins/`: Directories for additional project files, OS-level packages, Python packages, and custom plugins.
+- `airflow_settings.yaml`: Specifies Airflow Connections, Variables, and Pools for local development.
 
-## Building the Pipeline
+## Deploy Your Project Locally
 
-- You will build a basic Airflow pipeline that uses DBT and Snowflake for data processing.
-- Additionally, you will create a more advanced pipeline that incorporates Snowpark for data analysis with Python.
+1. **Start Airflow**: Run `astro dev start` to spin up Docker containers for Airflow components (Postgres, Webserver, Scheduler, Triggerer).
+2. **Verify Containers**: Ensure all Docker containers are up by running `docker ps`.
+3. **Access Airflow UI**: Visit http://localhost:8080/ (default login: `admin`/`admin`) and configure connections as described in the provided article for Snowflake communication.
 
-## Note
+## Deploy Your Project to Astronomer
 
-Streamlit has not been implemented in this project.
+For deploying to Astronomer, refer to the [official documentation](https://docs.astronomer.io/cloud/deploy-code/).
 
 ## Next Steps
 
-After setting up the connections in Airflow, trigger the DAGs and monitor their execution. Upon successful completion, review the logs of the `findbesthotel` task in Airflow to see the results.
+After configuring Airflow connections, execute the DAGs and monitor their progress. Review the `findbesthotel` task logs for results.
 
-This guide outlines the steps to quickly deploy and run the project, enabling data transformation and analysis workflows using Airflow, DBT, and Snowflake.
+## Contact
+
+For support with the Astronomer CLI or any deployment issues, please reach out to Astronomer support.
+
+## Note
+
+This project does not implement Streamlit.
+
