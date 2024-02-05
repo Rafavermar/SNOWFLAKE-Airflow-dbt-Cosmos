@@ -1,5 +1,5 @@
 # SnowflakeAirflowDbtCosmos Project
-![snowflake architecture.png](assets%2Fsnowflake architecture.png)
+![snowflake_architecture.png](assets%2Fsnowflake_architecture.png)
 ## Overview
 
 Welcome to the SnowflakeAirflowDbtCosmo project, a demonstration of integrating Airflow, DBT, and Snowflake with Snowpark for advanced data analysis. This project, generated with `astro dev init` using the Astronomer CLI, showcases how to run Apache Airflow locally, building both simple and advanced data pipelines involving Snowflake.
