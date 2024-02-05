@@ -42,8 +42,11 @@ After configuring Airflow connections, execute the DAGs and monitor their progre
 
 Under assets folder, you can find useful informacion such us websites, SQL commnands needed and orientation for the parameters by initializing dbt.
 This project is based on the official quick start from Snowflake. However I must to update, change code and find missing operators in order to accomplish the whole project.
+
 check my article here: 
-check the quick start tutorial here: [Qucick start Official Snowflake]([https://docs.astronomer.io/cloud/deploy-code/](https://quickstarts.snowflake.com/guide/data_engineering_with_apache_airflow/index.html?index=..%2F..index#0)https://quickstarts.snowflake.com/guide/data_engineering_with_apache_airflow/index.html?index=..%2F..index#0). 
+
+check the quick start tutorial here:
+[Qucick start Official Snowflake](https://docs.astronomer.io/cloud/deploy-code/](https://quickstarts.snowflake.com/guide/data_engineering_with_apache_airflow/index.html?index=..%2F..index#0)https://quickstarts.snowflake.com/guide/data_engineering_with_apache_airflow/index.html?index=..%2F..index#0). 
 
 ## Note
 
