@@ -7,7 +7,7 @@ version: '1.0.0'
 config-version: 2
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'cosmosproject'
+profile: 'my_snowflake_db'
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
@@ -18,6 +18,9 @@ test-paths: ["tests"]
 seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
+target-path: "target"
+
+
 
 clean-targets:         # directories to be removed by `dbt clean`
   - "target"
@@ -31,8 +34,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 # directory as views. These settings can be overridden in the individual model
 # files using the `{{ config(...) }}` macro.
 models:
-  my_new_project:
-      # Applies to all files under models/example/
+  cosmosproject:
+
       transform:
           schema: transform
           materialized: view

@@ -1,0 +1,12 @@
+my_snowflake_db:
+  target: dev
+  outputs:
+    dev:
+      type: "snowflake"
+      account: "xx00000.eu-west-3.aws" #from copy account URL take the identifier
+      user: "user" #the Snowflake user. Check profile > Username: xxx
+      password: "pwd"
+      role: "ACCOUNTADMIN"
+      database: "DEMO_dbt"
+      warehouse: "DBT_DEV_WH"
+      schema: "public"

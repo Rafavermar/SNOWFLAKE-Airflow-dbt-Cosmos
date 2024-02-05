@@ -3,7 +3,21 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="\dbt_airflow\dags\dbt\cosmosproject\data\bookings_1.csv">
+        <entry key="\dbt_airflow\dags\dbt\cosmosproject\seeds\bookings_1.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\dbt_airflow\dags\dbt\cosmosproject\seeds\bookings_2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\dbt_airflow\dags\dbt\cosmosproject\seeds\customers.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
