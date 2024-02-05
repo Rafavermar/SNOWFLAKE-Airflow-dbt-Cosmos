@@ -1,0 +1,27 @@
+Edit Connection
+Connection Id *	:
+cosmosDag
+Connection Type *:	
+Snowflake
+Description:	
+Schema:	
+public
+Login:	
+user
+Password:	
+snowflake password
+Extra: # autofills after save
+Account:
+bb00000.eu-west-3.aws
+Warehouse:	
+DBT_DEV_WH
+Database:	
+DEMO_dbt
+Region:	leave it empty. the region is taken from snowflake by the account
+Role:	
+ACCOUNTADMIN
+Private key (Path): leave empty
+Private key (Text): empty	
+
+Insecure mode: not checked
+Turns off OCSP certificate checks

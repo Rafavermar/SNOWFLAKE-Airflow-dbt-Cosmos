@@ -1,0 +1,18 @@
+To obtain the values you need to configure your dbt profiles.yml file for Snowflake connection, here's how to find each one:
+
+account: This is the identifier for your Snowflake account, which is usually a part of your Snowflake URL. For example, if your URL is https://xy12345.east-us-2.azure.snowflakecomputing.com, your account identifier would be xy12345.
+
+username: It is the username you have created to access Snowflake, which you will use for authentication.
+
+password: The password associated with your Snowflake user.
+
+role: The role assigned to your user in Snowflake, which determines your permissions. If you have followed the steps to create a role, it would be something like dbt_DEV_ROLE.
+
+warehouse: The name of the data warehouse in Snowflake that dbt will use to execute transformations, for example, dbt_DEV_WH.
+
+database: The name of the database that dbt will use. Based on your example, it would be DEMO_DBT.
+
+schema: The schema within the database where dbt will create or search for objects, such as tables or views. It can be the PUBLIC schema or any other schema you have created or have permission to use.
+
+
+
